@@ -2,3 +2,5 @@
 2. git命令测试
 
 git  master 修改
+checkout dev 修改
+两者都保留，然后提交
