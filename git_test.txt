@@ -3,8 +3,17 @@
 
 git  master 修改
 checkout dev 修改
+
+
 两者都保留，然后提交
+
+
 另外一个电脑，pull 时和远程仓库有冲突，test.
+
+
+
+
+
 
 是的冯绍峰是，测试pull 有冲突
 
