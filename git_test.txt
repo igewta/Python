@@ -4,3 +4,5 @@
 git  master 修改
 checkout dev 修改
 两者都保留，然后提交
+
+是的冯绍峰是，测试pull 有冲突
