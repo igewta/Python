@@ -33,7 +33,7 @@ print('1234'.isdigit()) # true
 # ispace()  字符串只包含空格
 print('   s'.isspace())
 # join() 注意join 的用法，分隔符放在前面，字符串放在join 中
-print('，'.join(a))
+print(','.join(a)) # h,e,l,l,o, ,w,o,r,d
 # 大小写切换，lower()  upper()
 print(a.upper())
 print(b.lower())
