@@ -1,0 +1,2 @@
+#  test git add configuration
+#
