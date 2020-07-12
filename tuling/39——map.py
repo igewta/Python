@@ -53,3 +53,31 @@ def by_score(t):
 
 l3 = sorted(L, key=by_score)
 print(l3)
+print("L:", L)
+
+print(type(list(range(100))))
+'''
+lambda 匿名函数
+'''
+l = lambda x: x*2, [1, 2, 3]
+print(l)
+
+'''
+按照权重排序，函数式编程，权重是100，价格占得权重40%，销量占的权重17%，评级占得权重13%，评论占得权重30%
+'''
+
+goods = [{"name": "good1", "price": 200, "sales": 100, "stars": 5, "comment": 400},
+         {"name": "good2", "price": 300, "sales": 300, "stars": 3, "comment": 400},
+            {"name": "good3", "price": 2800, "sales": 1500, "stars": 5, "comment": 3200}]
+
+def my_sorted(arg):#  关于函数的参数问题，*，** 和arg 之类的
+    price = arg['price']
+    sales = arg['sales']
+    stars = arg['stars']
+    comment = arg['comment']
+    data = price * 0.4 + sales * 0.17 + stars * 0.13 + comment * 0.3
+    return data
+
+
+print(sorted(goods, key=my_sorted))
+print(sorted(goods, key=lambda x:x['price'] * 0.4 +x['sales']*0.17+x['stars']*0.13+x['comment']*0.3, reversed=True) )
